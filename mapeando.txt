@@ -1,0 +1,25 @@
+tag: h2, button, div     - 1 ponto
+class: .container .alert - 10 pontos
+id: btn-adicionar        - 100 pontos
+
+<button id="btn-entrar" class="btn-primary">Entrar</button>
+
+@FindBy(css = "button")                  // mapeando pela tag            1 ponto - pouco específico      
+@FindBy(css = ".btn-primary")            // mapeando pela classe        10 pontos             
+@FindBy(css = "button.btn-adicionar")    //mapeando pela tag + classe   11 pontos                  
+@FindBy(id = "btn-entrar")               // mapeando pelo id            100 pontos - único
+
+Console:
+document.querySelector("body>div>button")
+
+Elements:
+******clica com o direito no elemento e copia o selector******
+
+
+
+
+
+
+
+
+document.querySelector('li.nav-item>a')
